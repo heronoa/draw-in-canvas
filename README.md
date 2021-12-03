@@ -8,7 +8,7 @@
 
 ## Main Screen where is displayed the canvas, input for choose the color and the line width:
 
-![alt Intruments in the browser](https://github.com/heronoa/draw-in-canvas/blob/master/images/body.jpg?raw=true)
+![alt Main screen from draw-in-canvas](https://github.com/heronoa/draw-in-canvas/blob/master/images/canvas.jpg?raw=true)
 
 ### Future Features: 
 * Random background images from a photos API;
