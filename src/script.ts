@@ -36,7 +36,9 @@ paintingArea.addEventListener('mousemove', (e)=>{
 
 paintingArea.addEventListener('mouseup', ()=>drawingMode = false);
 
-document.querySelector('.clear').addEventListener('click', clearDraw)
+document.querySelectorAll('.mybtn')[0].addEventListener('click', clearDraw);
+
+document.querySelectorAll('.mybtn')[1].addEventListener('click', downloadCanvas)
 
 //FUNCTIONS
 
@@ -66,3 +68,13 @@ function clearDraw() {
     ctx.setTransform(1, 0, 0, 1, 0, 0);
     ctx.clearRect(0,0, ctx.canvas.width, ctx.canvas.height);
 }
+
+function downloadCanvas() {
+    const a = document.createElement('a')
+    let url = paintingArea.toDataURL('image/png');
+    a.href = url
+    a.download = url.split('/').pop()
+    document.body.appendChild(a)
+    a.click()
+    document.body.removeChild(a)
+  }

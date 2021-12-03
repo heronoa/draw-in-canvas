@@ -34,17 +34,18 @@ h1 {
     height: 40px;
     cursor: pointer;
 }
-.color.active {
-    border: 5px solid #FFF;
+
+.btns {
+    display:flex;
 }
 
-.clear {
+.mybtn {
     border: 1px solid #000;
     background-color: rgba(0, 0, 0, 0.2);
     color: #FFF;
     padding: 10px;
-    margin-top: 20px;
     cursor: pointer;
+    margin: 10px 20px
 }
 
 footer {
